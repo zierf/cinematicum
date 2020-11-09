@@ -1,5 +1,6 @@
 # Cinematicum
 
+
 ## Install Ionic
 
 ```SH
@@ -13,12 +14,45 @@ ionic --version
 ionic start "cinematicum" blank --project-id=cinematicum --type=angular --capacitor
 ```
 
+
 ## Build project
+
 ```SH
-ionic build
+ionic build [--prod]  [--watch]
 ```
 
 ## Serve project
+
 ```SH
-ionic serve
+ionic ssl generate
+ionic serve [--prod] [--ssl] [--external]
+```
+
+
+## Android
+
+### Build for Android
+
+```SH
+ionic capacitor build android [--prod]
+```
+
+### Run for Android
+
+```SH
+ionic capacitor run android --livereload --external [--prod]
+```
+
+## iOS
+
+### Build for iOS
+
+```SH
+ionic capacitor build ios [--prod]
+```
+
+### Run for iOS
+
+```SH
+ionic capacitor run ios --livereload --external [--prod]
 ```
